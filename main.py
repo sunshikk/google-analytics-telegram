@@ -42,7 +42,9 @@ cancel = InlineKeyboardMarkup(inline_keyboard=[
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(token=os.environ["TOKEN"]) # токен, который будет в качестве переменной на хостинге
+BOT_TOKEN = os.environ["TOKEN"] 
+
+bot = Bot(token=BOT_TOKEN) # токен, который будет в качестве переменной на хостинге
 dp = Dispatcher() # переменная диспетчера
 router = Router() # переменная роутера
 CREDENTIALS_PATH = "credentials.json"
