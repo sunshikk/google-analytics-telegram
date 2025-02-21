@@ -83,10 +83,10 @@ def get_daily_analytics(credentials_path, property_id):
         metrics=[
             Metric(name="totalUsers"),
             Metric(name="sessions"),
-            # Metric(name="screenPageViews"),  # Временно убраны для упрощения
-            # Metric(name="bounceRate"),
-            # Metric(name="averageSessionDuration"),
-            # Metric(name="transactions"), # Временно убраны для упрощения
+            Metric(name="screenPageViews"),  # Временно убраны для упрощения
+            Metric(name="bounceRate"),
+            Metric(name="averageSessionDuration"),
+            Metric(name="transactions"), # Временно убраны для упрощения
         ]
 
         request = RunReportRequest(
